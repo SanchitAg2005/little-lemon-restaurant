@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon - Authentic Mediterranean Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav__container">
+                <div class="nav__brand">
+                    <span class="nav__logo" aria-label="Little Lemon Restaurant">🍋 Little Lemon</span>
+                </div>
+                <button class="nav__toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav__menu" role="menubar">
+                    <li role="none"><a href="#home" class="nav__link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#menu" class="nav__link" role="menuitem">Menu</a></li>
+                    <li role="none"><a href="#reservations" class="nav__link" role="menuitem">Reservations</a></li>
+                    <li role="none"><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 id="hero-title" class="hero__title">Little Lemon</h1>
+                <p class="hero__subtitle">Authentic Mediterranean Cuisine</p>
+                <p class="hero__description">
+                    Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails 
+                    in a lively but casual environment. We feature a locally-sourced menu with daily specials.
+                </p>
+                <button class="btn btn--primary btn--lg hero__cta" onclick="scrollToSection('reservations')">
+                    Book a Table
+                </button>
+            </div>
+            <div class="hero__image">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1755156119/pplx_project_search_images/869bf624bd5f06b3890d36c4c2be2874af34c643.png" 
+                     alt="Modern Mediterranean dish with grilled halloumi, apricots, and cherry tomatoes" 
+                     class="hero__img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured" aria-labelledby="featured-title">
+        <div class="container">
+            <h2 id="featured-title" class="section-title">Featured Dishes</h2>
+            <div class="featured__grid">
+                <div class="featured__card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755368862/pplx_project_search_images/f66b942c1500f8bad67f1da383ca718f19e73ade.png" 
+                         alt="Mediterranean mezze platter with dips and fresh vegetables" 
+                         class="featured__image">
+                    <h3 class="featured__name">Mediterranean Mezze Platter</h3>
+                    <p class="featured__description">A selection of our finest dips, fresh vegetables, and pita bread</p>
+                </div>
+                <div class="featured__card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755368862/pplx_project_search_images/70117787d743678dab36f42ad4112632b81ba784.png" 
+                         alt="Middle Eastern dishes including falafel, hummus, and kebabs" 
+                         class="featured__image">
+                    <h3 class="featured__name">Chef's Special Platter</h3>
+                    <p class="featured__description">Falafel, hummus, grilled kebabs with fresh salad and pita</p>
+                </div>
+                <div class="featured__card">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755368862/pplx_project_search_images/9c50f801f4069e0f0afd2bb54046b2ea86c1c739.png" 
+                         alt="Mediterranean cuisine with grilled vegetables and traditional dishes" 
+                         class="featured__image">
+                    <h3 class="featured__name">Grilled Vegetable Feast</h3>
+                    <p class="featured__description">Seasonal grilled vegetables with traditional Mediterranean flavors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 id="about-title" class="section-title">About Little Lemon</h2>
+                    <p class="about__text">
+                        Founded with a passion for authentic Mediterranean cuisine, Little Lemon brings the vibrant 
+                        flavors of the Mediterranean to Chicago. Our chefs carefully source the finest ingredients 
+                        to create dishes that honor traditional recipes while embracing modern culinary techniques.
+                    </p>
+                    <p class="about__text">
+                        We believe in the power of good food to bring people together. Our warm, welcoming atmosphere 
+                        makes every meal a celebration, whether you're joining us for a casual lunch or a special dinner.
+                    </p>
+                    <div class="about__values">
+                        <h3>Our Values</h3>
+                        <ul>
+                            <li>Fresh, locally-sourced ingredients</li>
+                            <li>Authentic Mediterranean traditions</li>
+                            <li>Exceptional hospitality</li>
+                            <li>Community connection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755368862/pplx_project_search_images/22f9ee5b70bf05b7a5e1dc11e60c83dc8e07fcd7.png" 
+                         alt="Modern Mediterranean-style restaurant interior with exposed brick walls" 
+                         class="about__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu" aria-labelledby="menu-title">
+        <div class="container">
+            <h2 id="menu-title" class="section-title">Our Menu</h2>
+            <div class="menu__categories">
+                
+                <!-- Appetizers -->
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Appetizers</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Greek Salad</h4>
+                                <p class="menu__item-description">Fresh tomatoes, olives, feta cheese, and cucumbers</p>
+                            </div>
+                            <span class="menu__item-price">$12.99</span>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Bruschetta</h4>
+                                <p class="menu__item-description">Toasted bread with tomatoes, garlic, and basil</p>
+                            </div>
+                            <span class="menu__item-price">$10.99</span>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Hummus Platter</h4>
+                                <p class="menu__item-description">House-made hummus with warm pita and vegetables</p>
+                            </div>
+                            <span class="menu__item-price">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Dishes -->
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Main Dishes</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Grilled Branzino</h4>
+                                <p class="menu__item-description">Mediterranean sea bass with lemon and herbs</p>
+                            </div>
+                            <span class="menu__item-price">$26.99</span>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Lamb Souvlaki</h4>
+                                <p class="menu__item-description">Grilled lamb skewers with tzatziki and rice</p>
+                            </div>
+                            <span class="menu__item-price">$24.99</span>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Pasta Primavera</h4>
+                                <p class="menu__item-description">Seasonal vegetables with olive oil and parmesan</p>
+                            </div>
+                            <span class="menu__item-price">$18.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Desserts</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Baklava</h4>
+                                <p class="menu__item-description">Layers of phyllo with honey and pistachios</p>
+                            </div>
+                            <span class="menu__item-price">$7.99</span>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Lemon Sorbet</h4>
+                                <p class="menu__item-description">Fresh lemon sorbet with mint</p>
+                            </div>
+                            <span class="menu__item-price">$6.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu__category">
+                    <h3 class="menu__category-title">Beverages</h3>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Greek Wine Selection</h4>
+                                <p class="menu__item-description">Rotating selection of Greek wines</p>
+                            </div>
+                            <span class="menu__item-price">$8-15</span>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-info">
+                                <h4 class="menu__item-name">Mediterranean Lemonade</h4>
+                                <p class="menu__item-description">Fresh squeezed with herbs</p>
+                            </div>
+                            <span class="menu__item-price">$4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations" aria-labelledby="reservations-title">
+        <div class="container">
+            <h2 id="reservations-title" class="section-title">Make a Reservation</h2>
+            <p class="reservations__subtitle">Book your table online and enjoy an unforgettable Mediterranean dining experience.</p>
+            
+            <form class="booking-form" role="form" aria-labelledby="reservations-title" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date" class="form-label">Date *</label>
+                        <input type="date" id="date" name="date" class="form-control" 
+                               aria-required="true" aria-describedby="date-error">
+                        <span class="error-message" id="date-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="time" class="form-label">Time *</label>
+                        <select id="time" name="time" class="form-control" 
+                                aria-required="true" aria-describedby="time-error">
+                            <option value="">Select a time</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="5:30 PM">5:30 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="7:30 PM">7:30 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="8:30 PM">8:30 PM</option>
+                            <option value="9:00 PM">9:00 PM</option>
+                            <option value="9:30 PM">9:30 PM</option>
+                            <option value="10:00 PM">10:00 PM</option>
+                        </select>
+                        <span class="error-message" id="time-error" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests" class="form-label">Party Size *</label>
+                        <select id="guests" name="guests" class="form-control" 
+                                aria-required="true" aria-describedby="guests-error">
+                            <option value="">Select party size</option>
+                            <option value="1">1 guest</option>
+                            <option value="2">2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="5">5 guests</option>
+                            <option value="6">6 guests</option>
+                            <option value="7">7 guests</option>
+                            <option value="8">8 guests</option>
+                        </select>
+                        <span class="error-message" id="guests-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="occasion" class="form-label">Occasion</label>
+                        <select id="occasion" name="occasion" class="form-control">
+                            <option value="">Select an occasion</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Anniversary">Anniversary</option>
+                            <option value="Date Night">Date Night</option>
+                            <option value="Business Dinner">Business Dinner</option>
+                            <option value="Family Gathering">Family Gathering</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name *</label>
+                    <input type="text" id="name" name="name" class="form-control" 
+                           aria-required="true" aria-describedby="name-error">
+                    <span class="error-message" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" 
+                               aria-required="true" aria-describedby="email-error">
+                        <span class="error-message" id="email-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" 
+                               aria-required="true" aria-describedby="phone-error">
+                        <span class="error-message" id="phone-error" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dietary" class="form-label">Dietary Restrictions</label>
+                    <input type="text" id="dietary" name="dietary" class="form-control" 
+                           placeholder="Please let us know about any dietary restrictions">
+                </div>
+
+                <div class="form-group">
+                    <label for="special-requests" class="form-label">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" class="form-control" rows="3" 
+                              placeholder="Any special requests or comments?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--lg btn--full-width">
+                    Book Table
+                </button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="confirmation-message hidden" role="alert" aria-live="assertive">
+                <h3>Reservation Confirmed!</h3>
+                <p>Thank you for your reservation. We look forward to serving you!</p>
+                <div class="confirmation-details"></div>
+                <button class="btn btn--secondary" onclick="resetForm()">Make Another Reservation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title">Contact Us</h2>
+            <div class="contact__container">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <h3>Address</h3>
+                        <p>123 Mediterranean Ave<br>Chicago, IL 60601</p>
+                    </div>
+                    <div class="contact__item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                    </div>
+                    <div class="contact__item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@littlelemon.com">info@littlelemon.com</a></p>
+                    </div>
+                </div>
+                <div class="contact__hours">
+                    <h3>Hours</h3>
+                    <div class="hours__list">
+                        <div class="hours__item">
+                            <span class="day">Monday</span>
+                            <span class="time">Closed</span>
+                        </div>
+                        <div class="hours__item">
+                            <span class="day">Tuesday - Thursday</span>
+                            <span class="time">5:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="hours__item">
+                            <span class="day">Friday</span>
+                            <span class="time">5:00 PM - 11:00 PM</span>
+                        </div>
+                        <div class="hours__item">
+                            <span class="day">Saturday</span>
+                            <span class="time">4:00 PM - 11:00 PM</span>
+                        </div>
+                        <div class="hours__item">
+                            <span class="day">Sunday</span>
+                            <span class="time">4:00 PM - 9:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="footer__logo">🍋 Little Lemon</span>
+                    <p>Authentic Mediterranean Cuisine</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#reservations">Reservations</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Little Lemon Restaurant. All rights reserved.</p>
+                <p>Meta Front-End Developer Capstone Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
