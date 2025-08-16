@@ -1,6 +1,4 @@
-// Little Lemon Restaurant - JavaScript functionality
 
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
     initMobileNavigation();
